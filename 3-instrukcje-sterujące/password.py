@@ -9,7 +9,7 @@
 
 
 # 1a
-"""
+
 password = input('wpisz hasło:')
 
 length_correct = len(password) >= 8
@@ -20,14 +20,14 @@ if not length_correct:
     print("Hasło musi mieć długość conajmniej 8 znaków")
 
 if not includes_letters_and_digits:
-        print("Hasło musi składać się z liter i cyfr")
+    print("Hasło musi składać się z liter i cyfr")
 
 if not at_least_one_capital_letter:
     print("Hasło musi zawierać conajmniej 1 dużą literę")
 
 else:
     print("Hasło zostało utworzone")
-"""
+
 
 # 1b
 
@@ -66,18 +66,18 @@ else:
 
 # 3.
 
-password = input('wpisz hasło:')
-
-if len(password) >= 8:
-    if password.isdigit() == False and password.isalpha() == False:
-        if password.islower() == False:
-            print("Hasło zostało utworzone")
-        else:
-            print("Hasło musi zawierać conajmniej 1 dużą literę")
-    else:
-        print("Hasło musi zawierać litery, cyfry i conajmniej 1 dużą literę")
-else:
-    print("Hasło musi mieć długość conajmniej 8 znaków")
+# password = input('wpisz hasło:')
+#
+# if len(password) >= 8:
+#     if password.isdigit() == False and password.isalpha() == False:
+#         if password.islower() == False:
+#             print("Hasło zostało utworzone")
+#         else:
+#             print("Hasło musi zawierać conajmniej 1 dużą literę")
+#     else:
+#         print("Hasło musi zawierać litery, cyfry i conajmniej 1 dużą literę")
+# else:
+#     print("Hasło musi mieć długość conajmniej 8 znaków")
 
 
 # 4.
