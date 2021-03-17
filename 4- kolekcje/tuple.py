@@ -5,7 +5,7 @@
 
 my_pet = ('pies', 'mieszaniec', 'Rocky')
 
-type_of_pet, race, name = my_pet
+type_of_pet, race, name = my_pet 
 
 sentence = f"Mój {my_pet[0]}, rasy {my_pet[1]} wabi się {my_pet[2]}."
 print(sentence, "\n")
@@ -21,7 +21,6 @@ for i in range(all_pets):
         print(pets[i], 'x', pets.count(pets[i]))
     i += 1
 print()
-
 
 # 3. Stwórz krotkę liczb całkowitych. Poproś użytkownika o podanie dowolnej liczby.
 # Jeśli liczba znajduje się na krotce wyswietl jej indeks.
