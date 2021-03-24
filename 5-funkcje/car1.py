@@ -23,16 +23,17 @@ Napisz program, który będzie sprawdzał, czy nasz samochód kwalifikuje się d
 
 """
 
-def is_antiquity(car_age):
-    if car_age >= 25:
+def is_antiquity(car_age, original):
+    if car_age >= 25 and original:
         print(f'Gratulacje! Twój samochód {car["brand"]} może być zarejestrowany jako zabytek.')
-    else:
+    elif car_age < 25:
         print(f'Twój samchód {car["brand"]} jest jeszcze zbyt młody')
-    
+    elif not original:
+        print(f'Twój samchód {car["brand"]} nie ma 75% oryginalnych części.')
 
 car = {'brand': 'renaut', 'model': 'megane', 'year': 1989, 'original_parts': 'yes'}
 print(car)
 
 car_age = 2021 - car['year']
 
-is_antiquity(car_age)
+is_antiquity(car_age, car['original_parts'])
