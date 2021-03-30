@@ -24,7 +24,7 @@ for month in range(year):
     for i in data[month][1]:
         if i < 10 and (i + 1) % 7 != 0:
             print("{:02d}".format(i + 1), '', end='')
-        if i == 7:
+        if i == 6:
             print("{:02d}".format(i + 1), '')
         if i >= 10 and (i + 1) % 7 != 0:
             print(i + 1, '', end='')
@@ -49,12 +49,11 @@ def days(i):
             print(i + 1, '')
     i += 1
 
+def print_calendar ():
+    for month in range(year):
+        print(data[month][0], "\n")
+        days(i)
+        print("\n")
 
-for month in range(year):
-    print(data[month][0], "\n")
-    days(1)
-    print("\n")
-
-
-
+print_calendar()
 

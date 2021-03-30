@@ -1,0 +1,5 @@
+flowers, aconite, anemone, aster, aubrieta, begonia, bellflower, bergenia, bloodroot, browallia, buttercup, caladium, calendula, carnation, cyclamen, dahlia, daisy, fennel, goatsbeard, hollyhock, hyacinth, lavender, marigold, moonflower, nasturtium, petunia, primrose, snowdrop, 
+
+birds, crane, crossbill, cuckoo, dipper, dunlin, eider, fieldfare, firecrest, fulmar, gannet, goshawk, goosander, woodlark, yellowhammer, woodpigeon, 
+
+animals, zebra, lion, elephant, hippotamus, hyena, lemur, cheetah, camel, iguana, okapi, mandrill, reindeer, kangaroo, 

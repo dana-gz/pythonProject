@@ -18,7 +18,7 @@ your_guess = []
 drawed = []
 present = []
 
-def guess():
+def guess(your_guess):
     print('Give 6 numbers for lottery in range 1 - 50: ')
     while len(your_guess) < 6:
         number = input('number: ')
@@ -30,22 +30,25 @@ def guess():
             print('You have already given this number. Give another one.')
         else:
             your_guess.append(number)
+    return your_guess
 
 
-def drawing():
+def drawing(drawed):
     while len(drawed) < 6:
         draw = random.randrange(0, len(numbers))
         drawed.append(draw)
+    return drawed
 
 
-def checking():
+def checking(present):
     for i in range(6):
         if your_guess[i] in drawed:
             present.append(your_guess[i])
         i += 1
+    return present
 
 
-def summary():
+def summary(present):
     if len(present) < 3:
         print('Not this time. Try again!')
     elif len(present) == 3:
@@ -56,12 +59,13 @@ def summary():
         print(f'You won {winner[1]} prize - {quota[1]}. Congratulation!')
     elif len(present) == 6:
         print(f'You won {winner[0]} prize - {quota[0]}. Congratulation!')
+    return quota
 
 def main():
-    guess()
-    drawing()
-    checking()
-    summary()
+    guess(your_guess)
+    drawing(drawed)
+    checking(present)
+    summary(present)
 
 main()
 
