@@ -31,14 +31,16 @@ def is_visa(card_number):
     else:
         return False
 
+
 def is_mastercard(card_number):
     if (51 >= int(card_number[0:2]) <= 55 or 2221 >= int(card_number[0:4]) <= 2720) and len(card_number) == 16:
         return True
     else:
         return False
 
+
 def is_american_express(card_number):
-    if card_number [0:2] in ['34', '37'] and len(card_number) == 15:
+    if card_number[0:2] in ['34', '37'] and len(card_number) == 15:
         return True
     else:
         return False
@@ -63,22 +65,9 @@ if can_be_card_number(user_input):
         print('Inna karta')
 
 
-
-
-
-
-
-
-
-
-
-    # if (51 >= int(user_input[0:2]) <= 55 or 2221 >= int(user_input[0:4]) <= 2720) and len(user_input) == 16:
-    #     print('MasterCard')
-
-
+# if (51 >= int(user_input[0:2]) <= 55 or 2221 >= int(user_input[0:4]) <= 2720) and len(user_input) == 16:
+#     print('MasterCard')
 # if len(user_input) in [13, 15, 16]:
 #     print('This not card number')
-#
 # if not user_input.isdigit():
 #     print('This is not card number')
-#

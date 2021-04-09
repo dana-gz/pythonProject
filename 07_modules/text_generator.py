@@ -34,7 +34,10 @@ def cut_sequence(intro):
     return longest_seq, m
 
 
-
+signs = []
+for i in range(4):
+    sign = input('podaj  znak: ')
+    signs.append(sign)
 
 
 

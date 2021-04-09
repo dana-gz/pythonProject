@@ -19,9 +19,10 @@ Napisz program, który będzie sprawdzał, czy nasz samochód kwalifikuje się d
 
         “Twój samochód (tutaj_marka) jest jeszcze zbyt młody.”
 
-    Gdy program będzie poprawnie działał, pozmieniaj wartości słownika (ale nie klucze!), aby zobaczyć, czy progam również zmienia swoje zachowanie.
-
+    Gdy program będzie poprawnie działał, pozmieniaj wartości słownika (ale nie klucze!),
+    aby zobaczyć, czy progam również zmienia swoje zachowanie.
 """
+
 
 def is_antiquity(car_age):
     if car_age >= 25:
@@ -30,7 +31,7 @@ def is_antiquity(car_age):
         print(f'Twój samchód {car["brand"]} jest jeszcze zbyt młody')
 
 
-car = {'brand': 'renaut', 'model': 'megane', 'year': 1989, 'original_parts': 'yes'}
+car = {'brand': 'renaut', 'model': 'megane', 'year': 1989, 'original_parts': True}
 print(car)
 
 car_age = 2021 - car['year']

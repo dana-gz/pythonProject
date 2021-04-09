@@ -31,12 +31,9 @@ def your_bmi_means(bmi):
 
 
 def main():
-    bmi = 0
+
     bmi = bmi_count()
     print("Twoje BMI to: ", bmi, "- oznacza to -", your_bmi_means(bmi), ".")
 
 
 main()
-
-
-
