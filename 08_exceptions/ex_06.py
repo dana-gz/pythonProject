@@ -9,12 +9,13 @@ except FileNotFoundError:
 
 filename1 = '01w.txt'
 with open(filename1, 'w') as f:
-
+    f.write('data')
     try:
         with open(filename1, 'r') as f:
             f.read()
     except SyntaxError:
         print('Unexpected EOF', filename1.title(), ' while parsing. Try again ;) ')
+
 
 try:
     with open(filename1, 'x') as f:

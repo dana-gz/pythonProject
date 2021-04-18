@@ -1,33 +1,36 @@
 import webbrowser
+import urllib.error
 
-prefix = ['https://', 'http://', "www."]
-suffix = ['.com', '.pl']
-# text1 = "www.xkcd.com/353/"
-text1 = input('Write address www: ')
 
-i = 0
-j = 0
+def checksuffix():
+    for i in range(len(suffix)):
+        if suffix[i] == address[-(len(suffix[i])):]:
+            print('s is true')
+            return True
+    # return False
 
-for i in range(len(prefix)):
-    if text1.startswith(prefix[i]):
-        for j in range(len(suffix)):
-            if text1.endswith(suffix[j]):
-                webbrowser.open(text1)
-                break
-            else:
-                print('Bad suffix')
-                break
+
+def checkprefix():
+    for j in range(len(prefix)):
+        if prefix[j] == address[0:(len(prefix[j]))]:
+            print('p is true')
+            return True
+    # return False
+
+
+def open_url():
+    if checkprefix() is True and checksuffix() is True:
+        webbrowser.open(address)
     else:
-        print('Bad prefix')
-
-   #secon version with try exception
-
-for i in range(len(prefix)):
-    try:
-       webbrowser.open(text1)
-
-    except URLError:
-        print('Bad preffix')
+        raise urllib.error.URLError('URLError')
 
 
+prefix = ['https://', 'http://', 'www']
+suffix = ['.com', '.pl']
+address = input('Write internet page address : ')
 
+
+try:
+    open_url()
+except urllib.error.URLError as e:
+    print('Check the address - URLError')

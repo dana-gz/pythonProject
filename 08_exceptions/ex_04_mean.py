@@ -2,15 +2,16 @@
 #  Napisz funkcję, która przyjmie wartości i wyświetli średnią.
 #  Program powinen być odporny na błędy użytkownika. Błędów nie wyświetlaj, ale rodzaj błędu zapisz do pliku.
 
-def to_int():
+def to_float():
     for i in range(len(numbers)):
         try:
-            numbers[i] = int(numbers[i])
+            numbers[i] = float(numbers[i])
         except ValueError as e:
             numbers[i] = 0
             err.append(1)
             collected_errors.append(e)
     return numbers, err, collected_errors
+
 
 collected_errors = []
 err = []
@@ -20,7 +21,7 @@ numbers = numbers.replace(' ', '')
 numbers = numbers.replace(',,', ',')
 numbers = numbers.split(',')
 
-to_int()
+to_float()
 
 valid_items = len(numbers) - len(err)
 # number of all items ('0' for error included) -  number of '0' for error
@@ -33,5 +34,5 @@ summ = 0
 for i in range(len(numbers)):
     summ += numbers[i]
 mean = summ / valid_items
+mean = round(mean, 2)
 print('The mean is: ', mean)
-

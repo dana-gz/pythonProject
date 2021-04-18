@@ -18,6 +18,7 @@ your_guess = []
 drawed = []
 present = []
 
+
 def guess(your_guess):
     print('Give 6 numbers for lottery in range 1 - 50: ')
     while len(your_guess) < 6:
@@ -61,14 +62,12 @@ def summary(present):
         print(f'You won {winner[0]} prize - {quota[0]}. Congratulation!')
     return quota
 
+
 def main():
     guess(your_guess)
     drawing(drawed)
     checking(present)
     summary(present)
 
+
 main()
-
-
-
-

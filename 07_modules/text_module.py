@@ -6,4 +6,3 @@ if __name__ == '__main__':
 
 intro = sequence()
 print(cut_sequence(intro))
-

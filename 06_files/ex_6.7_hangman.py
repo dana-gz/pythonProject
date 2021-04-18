@@ -1,8 +1,6 @@
 import random
 
 
-
-
 def category(animals, birds, flowers):
     cat = input("Choose the category: animals [a], birds [b], flowers [f]: ").lower()
     if cat == 'a':
@@ -41,7 +39,7 @@ def play(word):
                 print('Excelent', guess, 'is in the word.')
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if  letter == guess]
+                indices = [i for i, letter in enumerate(word) if letter == guess]
                 for index in indices:
                     word_as_list[index] = guess
                 word_completion = ''.join(word_as_list)
@@ -72,7 +70,7 @@ def play(word):
         print("Congrats,  you guessed the word! You won the game")
 
     else:
-        print('Sorry, you ran  out of tries. The word was' + word + 'Maybe next time.' )
+        print('Sorry, you ran  out of tries. The word was' + word + 'Maybe next time.')
 
 
 def display_hangman(tries):
@@ -126,7 +124,7 @@ animals = []
 birds = []
 flowers = []
 
-for l in range(len(lines)):
+for j in range(len(lines)):
     animals4 = lines[4].split(", ")
     animals = animals4[1:-1]
     birds2 = lines[2].split(", ")
@@ -143,6 +141,6 @@ def main():
         word = category(animals, birds, flowers)
         play(word)
 
+
 if __name__ == "__main__":
     main()
-

@@ -1,5 +1,6 @@
 import random
 
+
 def sequence():
     sequence_len = random.randrange(len(signs)+1, 100)
     sequence = ''
@@ -38,7 +39,3 @@ signs = []
 for i in range(4):
     sign = input('podaj  znak: ')
     signs.append(sign)
-
-
-
-

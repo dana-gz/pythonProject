@@ -15,6 +15,7 @@ def augury():
     x = letters.index(letter)
     print(f'Twoje imię zaczyna się na literę {name[0]}. Twoja cecha wiodąca to - {feature[x]}')
 
+
 augury()
 
 while input("Play again? (Y/N)").upper() == "Y":

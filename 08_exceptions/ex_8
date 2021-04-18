@@ -92,12 +92,18 @@ def game(level, try_no):
 
 
 def main():
+    try:
+        try_no = int(input("Give the number of rounds in the game: "))
+    except ValueError as e:
+        print("Value must be a number")
+        try_no = int(input("Give the number of rounds in the game: "))
 
-    try_no = int(input("Give the number of rounds in the game: "))
     print('S - Start')
     print('P - Difficulty level')
     print('Q - Quit')
     level = input('high (h), low (l) : ').lower()
+    while level != 'l' and level != 'h':
+        level = input('high (h), low (l) : ').lower()
     if level == 'l':
         game(3, try_no)
     elif level == 'h':
