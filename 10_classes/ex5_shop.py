@@ -44,32 +44,3 @@ if __name__ == '__main__':
 
 
 
-#
-# if __name__ == '__main__':
-#     my_shop = Shop()
-#     print(my_shop.store)
-#
-#
-#
-#     def __init__(self, product, size, price, quality, quantity):
-#         self.product = product
-#         self.size = size
-#         self.price = price
-#         self.quality = quality
-#         self.quantity = quantity
-#
-#     def show(self):
-#         return 'see' * self.product
-#
-#
-#     def put_on(self):
-#         return 'put' * self.product
-#
-#
-#     def count_stock(self):
-#         return self.product * self.quantity
-#
-#     def buy(self):
-#         return self.product * self.quantity - buy(self)
-#
-#
