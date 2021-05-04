@@ -13,3 +13,5 @@ kurs Python 2021
     07 Modules
     08 Exceptions
     09 Algorithms
+	10 OOP - classes 
+	11 OOP - inheritance
