@@ -17,5 +17,7 @@ def calculate_BMI(mass, height):
     else:
         return 'Something went wrong'
 
-
-
+m = 8
+h = 1.6
+result = calculate_BMI(m, h)
+print(result)
