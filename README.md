@@ -15,3 +15,6 @@ kurs Python 2021
     09 Algorithms
 	10 OOP - classes 
 	11 OOP - inheritance
+	12 OOP - decorators
+	13 Unit tests
+	14 API
